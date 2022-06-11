@@ -11,6 +11,10 @@ mySensor obj(greenLightPin, redLightPin, sensorPin);
 void setup() {
   // put your setup code here, to run once:
   
+  pinMode(greenLightPin, OUTPUT);
+  pinMode(redLightPin, OUTPUT);
+  pinMode(sensorPin, INPUT);
+  Serial.begin(9600);
 
 }
 
